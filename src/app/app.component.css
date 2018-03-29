@@ -1,0 +1,26 @@
+a {
+    border:3 solid whitesmoke;
+    background-color: green;
+    font-size:25px;
+    color:firebrick;
+    margin:10px;
+    border-radius:10px;
+}
+a:hover{
+    background-color:grey
+}
+
+
+/* Master Styles */
+
+
+.clicked{
+  color:blue;
+    font-weight:bold;
+}
+
+
+/* everywhere else */
+* { 
+  font-family: Arial, Helvetica, sans-serif; 
+}

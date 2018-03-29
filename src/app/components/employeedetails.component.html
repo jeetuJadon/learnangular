@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table>
+<thead>
+    <tr>
+        <th>
+            Name
+        </th>
+
+        <th>
+            City
+        </th>
+
+        <th>
+            Phone Number
+        </th>
+    </tr>
+</thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{name}}
+                </td>
+                <td>
+                    {{city}}
+                </td>
+                <td>
+                    {{phoneNumber}}
+                </td>
+               
+
+            </tr>
+            <tr *ngFor="let employee  of employees">
+              <td>
+                {{employee.name}}
+              </td>
+              <td>
+                {{employee.city}}
+              </td>
+              <td>
+                {{employee.phoneNumber}}
+              </td>
+
+            </tr>
+
+</tbody>
+</table>
+
+
+
+</body>
+</html>

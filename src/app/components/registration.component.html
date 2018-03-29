@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        Name
+      </td>
+
+      <td>
+        <input type="text" [(ngModel)]="firstName" value="{{firstName}}" (blur)="onBlurMethod($event.target.value)" />
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Gender
+      </td>
+
+
+      <td >
+        <input type="radio" name="gender" (click)="radiobuttonClicked($event.target.value)" value="male" checked> Male<br>
+        <input type="radio" name="gender" (click)="radiobuttonClicked($event.target.value)" value="female"> Female<br>
+        <input type="radio" name="gender" (click)="radiobuttonClicked($event.target.value)" value="other"> Other
+      </td>
+    </tr>
+    <tr *ngIf="ifOtherText">
+      <td>
+         Other Text
+      </td>
+
+      <td>
+        <input type="text" name="txtOther" />
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Gender Name
+      </td>
+
+      <td>
+        <input type="text" name="txtGender" value="{{address}}" />
+
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        Address
+      </td>
+
+      <td>
+        <input type="text" name="address" value="{{address}}" />
+
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        Phone Number
+      </td>
+
+      <td>
+        <input type="text" name="phoneNumber" value="{{phoneNumber*2}}" />
+
+      </td>
+    </tr>
+
+  </table>
+
+
+
+</body>
+</html>
